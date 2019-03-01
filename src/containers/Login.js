@@ -19,6 +19,8 @@ const loginBackgroundPath = require('../../assets/loginBackground.jpg');
 const loginLogoPath = require('../../assets/loginLogo.png');
 
 export class Login extends Component {
+
+
     render() {
       const {navigate} = this.props.navigation;
       return (

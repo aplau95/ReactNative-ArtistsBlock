@@ -7,12 +7,11 @@ import {
   View,
   ImageBackground,
   Image,
-  Button
 } from 'react-native';
 
-// import {
-//     Button
-// } from 'react-native-elements';
+import {
+    Button
+} from 'react-native-elements';
 
 import RoundTextInput from '../components/RoundTextInput';
 import Header from '../components/Header';
@@ -34,6 +33,16 @@ export class SignUp extends Component {
             <Header title='Artists Block'/>
             <RoundTextInput width={'80%'} height={50} placeholder={'Username'}/>
             <RoundTextInput width={'80%'} height={50} placeholder={'Password'}/>
+            <RoundTextInput width={'80%'} height={50} placeholder={'Verify Password'}/>
+            <Button
+                raised
+                title='Create'
+                backgroundColor='#ffffff'
+                // onPress={() => navigate('SignedIn')}
+                buttonStyle={{
+                    width: '100%'
+                }}
+            />
         </ImageBackground>
          
         </View>
